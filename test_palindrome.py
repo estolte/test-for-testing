@@ -1,3 +1,5 @@
+from is_palindrome import is_palindrome
+
 # 1. Basic palindrome
 assert is_palindrome("Racecar") == True
 
