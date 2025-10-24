@@ -1,1 +1,2 @@
-
+class View:
+  pass
