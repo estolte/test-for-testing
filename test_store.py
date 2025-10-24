@@ -2,6 +2,7 @@ from model import Model
 from view import View
 from controller import Controller
 from item import Item
+import json
 
 def testModel():
   test_data = [{"name": "Mechanical Keyboard", "price": 120.50, "count": 5}]
