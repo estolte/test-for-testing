@@ -1,7 +1,11 @@
-from model.py import model
-from view.py import view
-from controller.py import controller
+from model import Model
+from view import view
+from controller import controller
 
-# 1. Basic palindrome
-assert model({ "name": "Mechanical Keyboard", "price": 120.50, "count": 5 }) == [Item(name='Mechanical Keyboard', price=120.5, count=5)]
+
+def testModel():
+  test_data = [{"name": "Mechanical Keyboard", "price": 120.50, "count": 5}]
+  m = Model()
+  result = m.read(test_data)
+  assert isInstance(test_data, result)
 
