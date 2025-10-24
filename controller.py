@@ -1,2 +1,2 @@
-class Controller(controller):
-    
+class Controller():
+    pass
