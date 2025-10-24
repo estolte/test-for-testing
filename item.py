@@ -1,2 +1,7 @@
+from dataclasses import dataclass
+
+@dataclass(eq=True)
 class Item:
-  pass
+    name: str
+    price: float
+    count: int
