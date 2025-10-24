@@ -15,5 +15,6 @@ def testModel():
   m = Model()
   result = m.read(filepath)
   ideal = [Item(name='Mechanical Keyboard', price=120.5, count=5)]
-  assert isinstance(result, ideal)
+  assert isinstance(result, list)
+  assert result = ideal
 
