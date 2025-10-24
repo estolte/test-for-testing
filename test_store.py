@@ -12,7 +12,7 @@ def testModel():
     json.dump(test_data, f)
   
   m = Model()
-  result = m.read(test_data)
+  result = m.read(filepath)
   ideal = [Item(name='Mechanical Keyboard', price=120.5, count=5)]
   assert isinstance(result, ideal)
 
