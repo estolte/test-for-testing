@@ -5,6 +5,12 @@ from item import Item
 
 def testModel():
   test_data = [{"name": "Mechanical Keyboard", "price": 120.50, "count": 5}]
+  filepath = "temp_inventory.json"
+
+    # write to JSON file
+  with open(filepath, "w") as f:
+    json.dump(test_data, f)
+  
   m = Model()
   result = m.read(test_data)
   ideal = [Item(name='Mechanical Keyboard', price=120.5, count=5)]
