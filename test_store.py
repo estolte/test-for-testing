@@ -8,5 +8,5 @@ def testModel():
   m = Model()
   result = m.read(test_data)
   ideal = [Item(name='Mechanical Keyboard', price=120.5, count=5)]
-  assert isInstance(ideal, result)
+  assert isInstance(result, ideal)
 
