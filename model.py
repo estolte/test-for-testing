@@ -5,7 +5,7 @@ from item import Item
 
 
 class Model():
-    def read(filepath: str = 'inventory.json') -> List[Item]:
+    def read(self, filepath: str = 'inventory.json') -> List[Item]:
         """Reads the JSON file and returns a list of Item objects."""
         # File opening handles FileNotFoundError and IOError implicitly.
         # json.load handles JSONDecodeError implicitly.
