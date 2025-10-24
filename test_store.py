@@ -1,10 +1,7 @@
-from is_palindrome import is_palindrome
+from model.py import model
+from view.py import view
+from controller.py import controller
 
 # 1. Basic palindrome
-assert is_palindrome("Racecar") == True
+assert model({ "name": "Mechanical Keyboard", "price": 120.50, "count": 5 }) == [Item(name='Mechanical Keyboard', price=120.5, count=5)]
 
-# 2. Palindrome with spaces and punctuation
-assert is_palindrome("A man, a plan, a canal: Panama") == True
-
-# 3. Not a palindrome
-assert is_palindrome("ChatGPT") == False
