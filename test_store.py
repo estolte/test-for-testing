@@ -7,5 +7,6 @@ def testModel():
   test_data = [{"name": "Mechanical Keyboard", "price": 120.50, "count": 5}]
   m = Model()
   result = m.read(test_data)
+  ideal = [Item(name='Mechanical Keyboard', price=120.5, count=5)]
   assert isInstance(test_data, result)
 
