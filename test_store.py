@@ -1,6 +1,6 @@
 from model import Model
-from view import view
-from controller import controller
+from view import View
+from controller import Controller
 from item import Item
 
 def testModel():
