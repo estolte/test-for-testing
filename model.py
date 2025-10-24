@@ -4,7 +4,7 @@ from typing import List
 from item import Item
 
 
-class Model(model):
+class Model():
     def read(filepath: str = 'inventory.json') -> List[Item]:
         """Reads the JSON file and returns a list of Item objects."""
         # File opening handles FileNotFoundError and IOError implicitly.
